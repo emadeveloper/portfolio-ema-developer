@@ -7,8 +7,10 @@ const Services = () => {
     <section id='services' className='section bg-tertiary'>
         <div className='container mx-auto'>
             <div className='flex flex-col items-center text-center'>
-                <h2 className='section-title before:content-services relative before:absolute before:opacity-30 before:-top-[2rem] before:-left-28 before:hidden before:lg:block'>What I Do For Clients</h2>
-                <p className='subtitle'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quasi natus sequi numquam tempore, ratione temporibus quae reiciendis sunt fugit.</p>
+                <h2 className='section-title before:content-services relative before:absolute before:opacity-30 before:-top-[2rem] before:-left-28 before:hidden before:lg:block'>What I Do for Clients</h2>
+                <p className='subtitle'>
+
+                </p>
             </div>
             {/* {ITEM GRID} */}
             <div className='grid lg:grid-cols-4 gap-8'>

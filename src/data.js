@@ -12,6 +12,9 @@ import {
   FiMapPin,
 } from 'react-icons/fi';
 
+//Resume
+import CV from './assets/CV.pdf';
+
 // companies icons
 import FreelancerBrandIcon from './assets/img/brands/freelancer.png';
 import UpworkBrandIcon from './assets/img/brands/upwork.png';
@@ -20,22 +23,22 @@ import BehanceBrandIcon from './assets/img/brands/behance.png';
 import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
 
 // projects images
-import Project1 from './assets/img/projects/p1.webp';
-import Project2 from './assets/img/projects/p2.webp';
-import Project3 from './assets/img/projects/p3.webp';
-import Project4 from './assets/img/projects/p4.webp';
-import Project5 from './assets/img/projects/p5.webp';
+import Project1 from './assets/img/projects/gym-project.png';
+import Project2 from './assets/img/projects/realstate-project.png';
+import Project4 from './assets/img/projects/hangmen-project.png';
+import Project3 from './assets/img/projects/netflix-clone.png';
+import Project5 from './assets/img/projects/weather-app.png';
 import Project6 from './assets/img/projects/p6.webp';
 
 // skills images
 import SkillImg1 from './assets/img/skills/html5.png';
 import SkillImg2 from './assets/img/skills/css3.png';
-import SkillImg3 from './assets/img/skills/js.png';
-import SkillImg4 from './assets/img/skills/reactjs.png';
-import SkillImg5 from './assets/img/skills/nextjs.png';
+import SkillImg4 from './assets/img/skills/javascript.png';
+import SkillImg5 from './assets/img/skills/react.png';
+import SkillImg8 from './assets/img/skills/npm.png';
 import SkillImg6 from './assets/img/skills/nodejs.png';
 import SkillImg7 from './assets/img/skills/git.png';
-import SkillImg8 from './assets/img/skills/figma.png';
+import SkillImg3 from './assets/img/skills/tailwind.png';
 
 // testimonial images
 import TestiImage1 from './assets/img/testimonials/testimonial-1.webp';
@@ -74,7 +77,7 @@ export const navigation = [
 export const social = [
   {
     icon: <FiLinkedin />,
-    href: 'www.linkedin.com/in/emanuel-david-martinez',
+    href: 'https://www.linkedin.com/in/emanuel-david-martinez/',
   },
   {
     icon: <FiGithub />,
@@ -119,54 +122,62 @@ export const projectsData = [
   {
     id: '1',
     image: Project1,
-    name: 'project name 1',
-    category: 'UI/UX design',
+    name: 'Gym website',
+    category: 'Web Development',
+    description: 'Gym website developed to sell diet plans and exercise routines for La resistencia gym. This website was made with React Js, plain and custom CSS.',
+    href: 'https://github.com/emadeveloper',
+    icon: <FiGithub />,
   },
   {
     id: '2',
     image: Project2,
-    name: 'project name 2',
-    category: 'web development',
+    name: 'Real State website',
+    category: 'Landing',
+    description: 'A real state landing page for selling houses and apartments. This website was made with React Js, plain and custom CSS.',
   },
   {
     id: '3',
     image: Project3,
-    name: 'project name 3',
-    category: 'UI/UX design',
+    name: 'Netflix Clone',
+    category: 'Web Development',
+    description: 'This is a Netflix clone page , you can sign up, log in, and save your favorites movies/series. It was made with React Js, Tailwind CSS, Google Firestore and Firebase Authentication.',
   },
   {
     id: '4',
     image: Project4,
-    name: 'project name 4',
-    category: 'branding',
+    name: 'Hangmen Game',
+    category: 'Game Development',
+    description: 'Hangmen game made with React Js, plain CSS and Open Trivia API. You can choose the category of the questions and the difficulty',
   },
   {
     id: '5',
     image: Project5,
-    name: 'project name 5',
-    category: 'web development',
+    name: 'Weather App',
+    category: 'Web Development',
+    description: 'Weather application made with React Js, plain CSS and Open Weather API. You can search for the weather of any city in the world.',
   },
   {
     id: '6',
     image: Project6,
-    name: 'project name 6',
-    category: 'web development',
+    name: 'E-Commerce website',
+    category: 'Landing',
+    description: 'E-commerce website made with React Js, Tailwind CSS, Google Firestore, Firebase Authentication. You can add products to the cart, shop, log in, sign in and save your products.',
   },
 ];
 
 // projects
 export const projectsNav = [
   {
-    name: 'all',
+    name: 'All',
   },
   {
-    name: 'UI/UX Design',
+    name: 'Landing',
   },
   {
-    name: 'web development',
+    name: 'Web Development',
   },
   {
-    name: 'branding',
+    name: 'Game Development',
   },
 ];
 
@@ -203,26 +214,25 @@ export const services = [
   {
     icon: <FiLayout />,
     name: 'Web Design',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+    description: 'Designing beautiful websites with modern UI/UX',
   },
   {
     icon: <FiSettings />,
     name: 'Web Development',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+      'Web development with modern technologies like HTML5, Javascript, React, Tailwind CSS, NodeJs.',
   },
   {
     icon: <FiPenTool />,
-    name: 'Branding',
+    name: 'Knowledge',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+      'Always learning new things to improve my skills to develop the best applications.',
   },
   {
     icon: <FiTag />,
     name: 'SEO',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+      ' Search engine optimization to improve the visibility of your website in search engines like Google.',
   },
 ];
 
@@ -256,13 +266,13 @@ export const contact = [
   {
     icon: <FiMail />,
     title: 'Have a question?',
-    subtitle: 'I am here to help you.',
-    description: 'Email me at hello@youremail.com',
+    subtitle: 'You can contact me here:',
+    mail: <a href="mailto:yinproducciones@gmail.com" target='_blank'>yinproducciones@gmail.com</a>
   },
   {
     icon: <FiMapPin />,
     title: 'Current Location',
-    subtitle: 'Bucharest, Romania',
-    description: 'Serving clients worldwide',
+    subtitle: 'Rio Negro, Argentina',
+    description: 'San Carlos de Bariloche',
   },
 ];

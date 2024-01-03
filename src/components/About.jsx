@@ -1,5 +1,6 @@
 import React from "react";
-import Image from "../assets/img/about.webp";
+import Image from "../assets/img/about-1.jpg";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-24">
           <img
-            className="object-cover h-full w-[566px] md:mx-auto lg:mx-0 rounded-2xl"
+            className="object-cover h-[500px] w-[566px] md:mx-auto lg:mx-0 rounded-2xl"
             src={Image}
             alt="/"
           />
@@ -19,14 +20,13 @@ const About = () => {
               <p className="mb-4 text-accent">Web Developer</p>
               <hr className="mb-8 opacity-5" />
               <p className="mb-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                quisquam vitae perspiciatis iste sapiente reprehenderit,
-                distinctio culpa debitis nisi dolorum. <br /> Lorem ipsum dolor
-                sit amet consectetur, adipisicing elit. Quae, nesciunt.
+              Enthusiastic tech specializing in programming and web development, dedicated to continuous learning. A collaborative team player with a robust skill set and comprehensive knowledge base, I thrive in dynamic environments. Committed to delivering exceptional results, I eagerly embrace challenges for professional growth. Outside of tech, I enjoy playing basketball, swimming, and futbol. Additionally, I have a keen interest in collecting watches.
               </p>
             </div>
             <button className="btn btn-md bg-accent hover:bg-accent-hover transition-all">
-              Contact Me
+              <Link smooth={true} duration={500} to="contact">
+                Contact Me
+              </Link>
             </button>
           </div>
         </div>
