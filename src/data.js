@@ -12,9 +12,6 @@ import {
   FiMapPin,
 } from 'react-icons/fi';
 
-//Resume
-import CV from './assets/CV.pdf';
-
 // companies icons
 import FreelancerBrandIcon from './assets/img/brands/freelancer.png';
 import UpworkBrandIcon from './assets/img/brands/upwork.png';
@@ -27,8 +24,8 @@ import Project1 from './assets/img/projects/gym-project.png';
 import Project2 from './assets/img/projects/realstate-project.png';
 import Project4 from './assets/img/projects/hangmen-project.png';
 import Project3 from './assets/img/projects/netflix-clone.png';
-import Project5 from './assets/img/projects/weather-app.png';
-import Project6 from './assets/img/projects/p6.webp';
+import Project5 from './assets/img/projects/weather-project.png';
+import Project6 from './assets/img/projects/ecommerce-project-1.png';
 
 // skills images
 import SkillImg1 from './assets/img/skills/html5.png';
@@ -62,10 +59,6 @@ export const navigation = [
   {
     name: 'services',
     href: 'services',
-  },
-  {
-    name: 'testimonials',
-    href: 'testimonials',
   },
   {
     name: 'contact',
@@ -126,7 +119,6 @@ export const projectsData = [
     category: 'Web Development',
     description: 'Gym website developed to sell diet plans and exercise routines for La resistencia gym. This website was made with React Js, plain and custom CSS.',
     href: 'https://github.com/emadeveloper',
-    icon: <FiGithub />,
   },
   {
     id: '2',
@@ -140,7 +132,7 @@ export const projectsData = [
     image: Project3,
     name: 'Netflix Clone',
     category: 'Web Development',
-    description: 'This is a Netflix clone page , you can sign up, log in, and save your favorites movies/series. It was made with React Js, Tailwind CSS, Google Firestore and Firebase Authentication.',
+    description: 'This is a Netflix clone page , you can sign up, log in, and save your favorites movies/series. It was made by consuming the TMDB Movie database API, and created with React Js, Tailwind CSS, Google Firestore and Firebase Authentication.',
   },
   {
     id: '4',
@@ -161,7 +153,7 @@ export const projectsData = [
     image: Project6,
     name: 'E-Commerce website',
     category: 'Landing',
-    description: 'E-commerce website made with React Js, Tailwind CSS, Google Firestore, Firebase Authentication. You can add products to the cart, shop, log in, sign in and save your products.',
+    description: 'E-commerce website made with React Js, Tailwind CSS, and consuming the Fake Store API. You can add products to the cart, shop, remove items, clear the cart and more features.',
   },
 ];
 
@@ -233,31 +225,6 @@ export const services = [
     name: 'SEO',
     description:
       ' Search engine optimization to improve the visibility of your website in search engines like Google.',
-  },
-];
-
-// testimonials
-export const testimonials = [
-  {
-    authorImg: TestiImage1,
-    authorText:
-      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-    authorName: 'Olivia Doe',
-    authorPosition: 'Head of Design, Google',
-  },
-  {
-    authorImg: TestiImage2,
-    authorText:
-      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-    authorName: 'Olivia Doe',
-    authorPosition: 'Head of Design, Google',
-  },
-  {
-    authorImg: TestiImage3,
-    authorText:
-      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-    authorName: 'Olivia Doe',
-    authorPosition: 'Head of Design, Google',
   },
 ];
 

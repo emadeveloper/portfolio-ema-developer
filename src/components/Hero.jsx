@@ -1,7 +1,7 @@
 import React from "react";
 import WImage1 from "../assets/img/about-1.jpg";
-/* import WImage from "../assets/img/banner-woman2.webp"; */
 import { Link } from "react-scroll";
+import CV from "../assets/CV.pdf";
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="flex  items-center h-full pt-8">
           {/* LEFT SIDE */}
           <div className="flex-1 flex flex-col items-center lg:items-start">
-            <p className="text-lg text-accent mb-[22px]">Hey, I'm Emanuel</p>
+            <p className="text-lg text-accent mb-[12px] mt-8">Hey, I'm Emanuel</p>
             <h1
               className="text-4xl leading-[44px] md:text-5xl
             md:leading-tight lg:text-7x1 lg:leading-[1.2] font-bold md:tracking-[-2px]"
@@ -32,9 +32,9 @@ const Hero = () => {
                 </Link>
               </button>
               <button className="btn btn-md bg-accent hover:bg-accent-hover md:btn-lg transition-all">
-                <Link download>
+                <a href={CV} download>
                   Download my CV
-                </Link>
+                </a>
               </button>
             </div>
           </div>
@@ -45,7 +45,6 @@ const Hero = () => {
               src={WImage1}
               alt="/"
             />
-            {/* <img className="h-[40rem]" src={WImage} alt="/" /> */}
           </div>
         </div>
       </div>
