@@ -1,12 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { navigation } from "../data";
 import { XIcon, MenuAlt3Icon } from "@heroicons/react/outline";
-import Socials from "./Socials";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  // Agrega un manejador de eventos para cerrar el menú cuando haces clic fuera de él
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
+
+  const handleCategoryClick = () => {
+    setIsOpen(false);
+  };
 
   /* FRAMER MOTION VARIANTS */
   const circleVariants = {
@@ -34,12 +53,13 @@ const NavMobile = () => {
       },
     },
   };
+
   return (
     <nav className="relative">
       {/* MENU ICON */}
       <div
-        onClick={() => setIsOpen(true)}
-        className="cursor-pointer text-white"
+        onClick={() => setIsOpen(!isOpen)}
+        className="cursor-pointer text-white p-4"
       >
         <MenuAlt3Icon className="w-8 h-8" />
       </div>
@@ -58,30 +78,30 @@ const NavMobile = () => {
         animate={isOpen ? "visible" : ""}
         className={`${
           isOpen ? "right-0" : "-right-full"
-        } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
+        } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden bg-gray-800`}
+        ref={menuRef}
       >
         {/* CLOSE ICON */}
         <div
           onClick={() => setIsOpen(false)}
-          className="cursor-pointer absolute top-8 right-8"
+          className="cursor-pointer absolute top-8 right-8 text-white"
         >
-          <XIcon className="w-8 h-8 color-white" />
+          <XIcon className="w-8 h-8" />
         </div>
-        {navigation.map((item, index) => {
-          return (
-            <li key={index} className="mb-8">
-              <Link
-                to={item.href}
-                smooth={true}
-                duration={500}
-                offset={-70}
-                className="text-xl cursor-pointer capitalize"
-              >
-                {item.name}
-              </Link>
-            </li>
-          );
-        })}
+        {navigation.map((item, index) => (
+          <li key={index} className="mb-6 border-b">
+            <Link
+              to={item.href}
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="text-white text-3xl cursor-pointer capitalize transition duration-300 hover:text-accent"
+              onClick={handleCategoryClick}
+            >
+              {item.name}
+            </Link>
+          </li>
+        ))}
       </motion.ul>
     </nav>
   );

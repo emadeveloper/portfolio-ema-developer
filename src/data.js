@@ -37,11 +37,6 @@ import SkillImg6 from './assets/img/skills/nodejs.png';
 import SkillImg7 from './assets/img/skills/git.png';
 import SkillImg3 from './assets/img/skills/tailwind.png';
 
-// testimonial images
-import TestiImage1 from './assets/img/testimonials/testimonial-1.webp';
-import TestiImage2 from './assets/img/testimonials/testimonial-2.webp';
-import TestiImage3 from './assets/img/testimonials/testimonial-3.webp';
-
 // navigation
 export const navigation = [
   {
@@ -173,31 +168,39 @@ export const projectsNav = [
   },
 ];
 
-// skill
+// skills
 export const skills = [
   {
     image: SkillImg1,
+    title: 'HTML5',
   },
   {
     image: SkillImg2,
+    title: 'CSS3',
   },
   {
     image: SkillImg3,
+    title: 'Tailwind CSS',
   },
   {
     image: SkillImg4,
+    title: 'Javascript',
   },
   {
     image: SkillImg5,
+    title: 'React Js',
   },
   {
     image: SkillImg6,
+    title: 'Node Js',
   },
   {
     image: SkillImg7,
+    title: 'Git',
   },
   {
     image: SkillImg8,
+    title: 'NPM',
   },
 ];
 
@@ -232,9 +235,15 @@ export const services = [
 export const contact = [
   {
     icon: <FiMail />,
-    title: 'Have a question?',
-    subtitle: 'You can contact me here:',
-    mail: <a href="mailto:yinproducciones@gmail.com" target='_blank'>yinproducciones@gmail.com</a>
+    title: 'Email',
+    mail: 'yinproducciones@gmail.com',
+    subtitle: <a href="mailto:yinproducciones@gmail.com" target='_blank'>Send Email</a>,
+  },
+  {
+    icon: <FiMail />,
+    title: 'WhatsApp',
+    mail: '+123456789:',
+    subtitle: <a href="https://wa.me/+5492944210930" target='_blank'>Send WhatsApp</a>
   },
   {
     icon: <FiMapPin />,

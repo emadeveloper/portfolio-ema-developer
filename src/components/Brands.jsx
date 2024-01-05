@@ -12,7 +12,7 @@ const Brands = () => {
             </div>
           );
         })} */}
-          <p className='section-title before:content-portfolio relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-3/4 before:hidden before:lg:block'>Web developer</p>
+          <p className='section-title before:content-portfolio relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-3/4 before:hidden before:lg:block'>Frontend developer</p>
       </div>
     </section>
   );
