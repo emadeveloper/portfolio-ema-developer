@@ -7,7 +7,6 @@ import {
   FiLayout,
   FiSettings,
   FiPenTool,
-  FiTag,
   FiMail,
   FiMapPin,
 } from 'react-icons/fi';
@@ -65,19 +64,19 @@ export const navigation = [
 export const social = [
   {
     icon: <FiLinkedin />,
-    href: 'https://www.linkedin.com/in/emanuel-david-martinez/',
+    url: 'https://www.linkedin.com/in/emanuel-david-martinez/',
   },
   {
     icon: <FiGithub />,
-    href: 'https://github.com/emadeveloper',
+    url: 'https://github.com/emadeveloper',
   },
   {
     icon: <FiInstagram />,
-    href: 'https://www.instagram.com/emanuel_martinez_1992/',
+    url: 'https://www.instagram.com/emanuel_martinez_1992/',
   },
   {
     icon: <FiFacebook />,
-    href: 'https://facebook.com/emanueldavidmartinez/',
+    url: 'https://facebook.com/emanueldavidmartinez/',
   },
 ];
 
@@ -157,22 +156,6 @@ export const projectsData = [
   },
 ];
 
-// projects
-export const projectsNav = [
-  {
-    name: 'All',
-  },
-  {
-    name: 'Landing',
-  },
-  {
-    name: 'Web Development',
-  },
-  {
-    name: 'Game Development',
-  },
-];
-
 // skills
 export const skills = [
   {
@@ -228,12 +211,6 @@ export const services = [
     description:
       'Always learning new things to improve my skills to develop the best applications.',
   },
-  /* {
-    icon: <FiTag />,
-    name: '',
-    description:
-      ' Search engine optimization to improve the visibility of your website in search engines like Google.',
-  }, */
 ];
 
 // contact
@@ -242,13 +219,13 @@ export const contact = [
     icon: <FiMail />,
     title: 'Email',
     mail: 'yinproducciones@gmail.com',
-    subtitle: <a href="mailto:yinproducciones@gmail.com" target='_blank'>Send an Email</a>,
+    subtitle: <a href="mailto:yinproducciones@gmail.com" target='_blank' rel='noreferrer'>Send an Email</a>,
   },
   {
     icon: <FiMail />,
     title: 'WhatsApp',
     mail: '+123456789:',
-    subtitle: <a href="https://wa.me/+5492944210930" target='_blank'>Send a WhatsApp</a>
+    subtitle: <a href="https://wa.me/+5492944210930" target='_blank' rel='noreferrer'>Send a WhatsApp</a>
   },
   {
     icon: <FiMapPin />,

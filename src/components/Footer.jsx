@@ -1,4 +1,3 @@
-import React from "react";
 import { social } from "../data";
 
 const Footer = () => {
@@ -9,13 +8,14 @@ const Footer = () => {
           {/* SOCIAL ICONS */}
           <div className="flex space-x-6 items-center justify-center">
             {social.map((item, index) => {
-              const { href, icon } = item;
+              const { url, icon } = item;
               return (
                 <a
                   className="text-accent text-base"
                   target="_blank"
-                  href={href}
+                  href={url}
                   key={index}
+                  rel="noreferrer"
                 >
                   {icon}
                 </a>
