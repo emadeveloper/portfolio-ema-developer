@@ -19,7 +19,7 @@ const Project = ({ item }) => {
           <p className="subtitle px-4 mb-6">{item.description}</p>
         </div>
         <button className="btn btn-md bg-accent hover:bg-accent-hover md:btn-lg transition-all my-10">
-          <a href={item.link} className="text-white">
+          <a href={item.link} target="_blank" rel="noreferrer" className="text-white">
             Live Demo
           </a>
         </button>
