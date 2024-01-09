@@ -113,13 +113,14 @@ export const projectsData = [
     name: 'Gym website',
     category: 'Web Development',
     description: 'Gym website developed to sell diet plans and exercise routines for La resistencia gym. This website was made with React Js, plain and custom CSS.',
-    href: 'https://github.com/emadeveloper',
+    link: 'https://fitclub-app-1.netlify.app',
   },
   {
     id: '2',
     image: Project2,
     name: 'Real State website',
     category: 'Landing',
+    link: 'https://realstate-web-app.netlify.app',
     description: 'A real state landing page for selling houses and apartments. This website was made with React Js, plain and custom CSS.',
   },
   {
@@ -127,6 +128,7 @@ export const projectsData = [
     image: Project3,
     name: 'Netflix Clone',
     category: 'Web Development',
+    link: 'https://film-app-clone.netlify.app',
     description: 'This is a Netflix clone page , you can sign up, log in, and save your favorites movies/series. It was made by consuming the TMDB Movie database API, and created with React Js, Tailwind CSS, Google Firestore and Firebase Authentication.',
   },
   {
@@ -134,6 +136,7 @@ export const projectsData = [
     image: Project4,
     name: 'Hangmen Game',
     category: 'Game Development',
+    link: 'https://hangmen-app.netlify.app/',
     description: 'Hangmen game made with React Js, plain CSS and Open Trivia API. You can choose the category of the questions and the difficulty',
   },
   {
@@ -141,6 +144,7 @@ export const projectsData = [
     image: Project5,
     name: 'Weather App',
     category: 'Web Development',
+    link: 'https://open-weather-app123.netlify.app',
     description: 'Weather application made with React Js, plain CSS and Open Weather API. You can search for the weather of any city in the world.',
   },
   {
@@ -148,6 +152,7 @@ export const projectsData = [
     image: Project6,
     name: 'E-Commerce website',
     category: 'Landing',
+    link: 'https://outlet-shop.netlify.app',
     description: 'E-commerce website made with React Js, Tailwind CSS, and consuming the Fake Store API. You can add products to the cart, shop, remove items, clear the cart and more features.',
   },
 ];
@@ -209,13 +214,13 @@ export const services = [
   {
     icon: <FiLayout />,
     name: 'Web Design',
-    description: 'Designing beautiful websites with modern UI/UX',
+    description: 'Creating, designing & maintaining beautiful websites',
   },
   {
     icon: <FiSettings />,
     name: 'Web Development',
     description:
-      'Web development with modern technologies like HTML5, Javascript, React, Tailwind CSS, NodeJs.',
+      'Web development with modern technologies like HTML5, Javascript, React, Tailwind CSS.',
   },
   {
     icon: <FiPenTool />,
@@ -223,12 +228,12 @@ export const services = [
     description:
       'Always learning new things to improve my skills to develop the best applications.',
   },
-  {
+  /* {
     icon: <FiTag />,
-    name: 'SEO',
+    name: '',
     description:
       ' Search engine optimization to improve the visibility of your website in search engines like Google.',
-  },
+  }, */
 ];
 
 // contact
@@ -237,13 +242,13 @@ export const contact = [
     icon: <FiMail />,
     title: 'Email',
     mail: 'yinproducciones@gmail.com',
-    subtitle: <a href="mailto:yinproducciones@gmail.com" target='_blank'>Send Email</a>,
+    subtitle: <a href="mailto:yinproducciones@gmail.com" target='_blank'>Send an Email</a>,
   },
   {
     icon: <FiMail />,
     title: 'WhatsApp',
     mail: '+123456789:',
-    subtitle: <a href="https://wa.me/+5492944210930" target='_blank'>Send WhatsApp</a>
+    subtitle: <a href="https://wa.me/+5492944210930" target='_blank'>Send a WhatsApp</a>
   },
   {
     icon: <FiMapPin />,

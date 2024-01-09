@@ -7,12 +7,12 @@ const Services = () => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <h2 className="section-title before:content-services relative before:absolute before:opacity-30 before:-top-[2rem] before:-left-28 before:hidden before:lg:block">
-            What I Do for Clients
+            Always Improving
           </h2>
           <p className="subtitle"></p>
         </div>
         {/* {ITEM GRID} */}
-        <div className="grid lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const { icon, name, description } = service;
             return (

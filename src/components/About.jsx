@@ -19,7 +19,7 @@ const About = () => {
               </h2>
               <p className="mb-4 text-accent">Frontend Developer</p>
               <hr className="mb-8 opacity-5" />
-              <p className="mb-8">
+              <p className="mb-8 lg:text-xl text-start">
               Enthusiastic tech specializing in programming and web development, dedicated to continuous learning. A collaborative team player with a robust skill set and comprehensive knowledge base, I thrive in dynamic environments. Committed to delivering exceptional results, I eagerly embrace challenges for professional growth. Outside of tech, I enjoy playing basketball, swimming, and play futbol. Additionally, I have a keen interest in collecting watches.
               </p>
             </div>
