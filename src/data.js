@@ -222,12 +222,6 @@ export const contact = [
     subtitle: <a href="mailto:yinproducciones@gmail.com" target='_blank' rel='noreferrer'>Send an Email</a>,
   },
   {
-    icon: <FiMail />,
-    title: 'WhatsApp',
-    mail: '+123456789:',
-    subtitle: <a href="https://wa.me/+5492944210930" target='_blank' rel='noreferrer'>Send a WhatsApp</a>
-  },
-  {
     icon: <FiMapPin />,
     title: 'Current Location',
     subtitle: 'Rio Negro, Argentina',
